@@ -1,0 +1,98 @@
+O que é e porque você deveria utilizar o Typescript
+
+O Typescript é um superset para javascript
+
+O JS fica tunado com o Typescript.
+    Dar mais poder as class
+    Criar Interface (contratos em que fica delimitado a mudança do código)
+    Criar ENUMS
+
+Pode ser utilizado em todo lugar que já é feito com o js.
+
+
+
+Processo de Transpilação (tradução + copilação)
+
+    Copila e traduz o cógido para JS. Todo TS converte para JS.
+    Responsável por fazer isso é NODE.
+
+
+NA PRÁTICA
+
+    Você consegue ver se o código teve algum erro ou se falta algum código após a execução e 
+    quando está codando aparece um alerta que falta o código em uma função por exemplo e qual
+    o código está faltando.
+
+
+
+Baixar TS
+
+    site typescriptlang.org
+
+    Globally Installing TypeScript 
+
+    Recomendação do professor : instalar de maneira alternativa pelo npx. Porque cada projeto trabalha de uma maneira.
+
+    Instalando Globalmente fica no windows.
+
+Instalando localmente no terminal
+
+    npm init -y      
+    //Criando o projeto de node na raiz.
+
+    npm install typescript -D     
+    // A dependencia instale e fica em desenvolvimento, apenas LOCALMENTE no projeto.
+
+    Criar um arquivo com .ts representando o typescript e já pode usar normalmente.
+
+
+Como usar no terminal
+
+    npx tsc src/index.ts
+    //Traduz o conteudo ts para js.
+    //Transformando o index.ts em index.js .
+
+Executar
+
+    node src/index.js [O mesmo que foi transformado de ts para js].
+
+Arquivo de configuração
+
+    npx tsc --init
+
+    Cria um arquivo tsconfig.json , como o ts vai se comportar. Pode habilitar ou desabilitar suas funções.
+    Dentre elas:
+
+    "target": "rs2006" //Determina qual versão transforma o ts em js
+    "rootDir": "./src" //Especifica a pasta raiz com seus arquivos, determinei como src.
+    "outDir": "./build"  //Especifica a pasta de saída padrão, determinei como build.
+
+    Ao em vez de passar arquivo por arquivo chama o código
+    
+    npx tsc
+
+    Não precisei especificar nenhum arquivo para ele pois já foi configurado acima na tsconfig.json.
+    Automaticamente ele criou um arquivo chamado build que foi configurado acima.
+    Fica mais fácil de trabalhar dessa maneira, de forma mais organizada e evita dar erros com várias informações na mesma pasta por isso foi recomendado criar uma pasta nova.
+
+Criando um Script de execução  
+
+    Dentro do arquivo package.json adicionar o código a seguir:
+    
+    "script": {
+       "start": "npx tsc && node build/index.js",
+    }
+
+    Para isso funciona precisa codar no terminal :
+
+    npm run start
+
+
+
+
+
+    
+
+
+
+
