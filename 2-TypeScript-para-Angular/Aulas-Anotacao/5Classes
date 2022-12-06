@@ -1,0 +1,34 @@
+Trabalhando com classes
+
+    void foi usado para não retornar nada para outras funções.
+
+    O this se refere a class "essa classe name" 
+    this.name = name
+    this.(class) =  (método do construtctor)
+
+    name?, o name pode ser opcional, mas remove do método do construtctor.
+
+    new declara uma nova instancia nessa classe.
+
+    No attack é usado void pq não ta retornando nada e sim tem um código de console.log , mas caso tivesse um return 
+    seria usado para retornar um string ao em vez de void.
+
+Data Modifiers - Modificadores de acesso
+
+    public - mesmo de não colocar nada.
+    
+    protected - sua propriedade só pode ser enxergada dentro de sua classe e suas subclasses, herdam essa classe. 
+
+    private - só pode ser acessado por dentro da classe, só se passar pelo metodo constructor.
+
+O que influencia nas classes
+
+    readonly - somente leitura.
+
+Subclasses
+
+    extends - responsável por extender as classes.
+    Magician é uma subclasse porque está herdando de outra classe, classe filha.
+    Character é superclass porque é uma super classe então é a classe pai.
+    O super é pra chamar o construtor da classe character(pai),
+    É a msm coisa da classe pai mas tem uma adição.

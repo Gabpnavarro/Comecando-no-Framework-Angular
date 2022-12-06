@@ -1,0 +1,58 @@
+Tipos de variáveis
+
+    Tipos primitivos: boolean, number, string
+
+    let ligado:boolean = false;
+    let ligado:boolean = true;
+    let nome: string = "Gabriel";
+    let idade: number = 30;
+    let idade: number = 1.9;
+
+    Tipos especiais
+
+    let nulo : null = null; //Só permite receber o null, não aceita valores númericos.
+    let indefinido : undefined = undefined;
+
+    Tipos abrangentes:
+
+    let retorno:void = "a"; 
+    //Executar e não vai retornar nada.
+    let retornoView:any = false; 
+    //aceita qualquer coisa, como string, boolean ou number, usado quando n sabe exatamente o que vai retornar.
+
+Trabalhando com Objects
+
+    let produto:object = {
+        name:"Gabriel",
+        cidade: "sp",
+        idade:30,
+    }
+    //Tem q ser escrito com chaves {}, aceita qualquer objeto. Objeto sem previsibilidade.
+    //Declarou como objeto com o object.
+
+    Para criar e ficar mais shapado com o type, tem previsibilidade pois o proprio código avisa caso falte 
+    algum código ou erro.
+
+Trabalhando com Arrays
+
+    Declara com string[] = [,,,]
+
+    Outra forma Array<string>
+
+Trabalhando com Arrays de Multi Types
+
+    Pode criar de vários tipos de conteúdos diferentes.
+
+Trabalhando com Tuplas
+
+    Voce precisa seguir na exata ordem diferente dos arrays. Caso inverta as ordem ele entende que está errado.
+
+Trabalhando com Dates
+
+    Armazena data e hora, a data é no padrão americado.
+
+
+
+
+
+    

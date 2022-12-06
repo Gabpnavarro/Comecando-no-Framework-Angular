@@ -1,0 +1,12 @@
+Funções
+
+    Pode tipar os parâmetros e o retorno.
+    Quando associado a uma variável pode tipar também.
+
+Funções Multi Tipos
+
+    Pode fazer mais de uma tipagem em um único parâmetro.
+
+Async
+
+    Sempre que tipar ele tem que retornar uma Promise, nessa ocasião uma string.

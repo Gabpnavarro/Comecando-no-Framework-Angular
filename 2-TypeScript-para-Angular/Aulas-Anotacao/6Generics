@@ -1,0 +1,10 @@
+O problema que o Generics resolve
+
+    Código expressa : Vários arrays em um só.
+    Os ... significa que aceita vários itens.
+    
+Utilizando Generics na prática
+
+    Serve para dar o parametros as funções.
+    Adiciona <T> e T [] , na const quando colocado <number> e <string> , o vetor aceita apenas número e 
+    palavra, respectivamente.

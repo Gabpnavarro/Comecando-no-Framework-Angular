@@ -1,0 +1,34 @@
+O principio dos decorators 
+
+    Decorators - Decora uma função pra que quando vir algum gatilho ela execute.
+
+    @ExibirNome - o @ significa que vai decorar a função.
+
+    O decorators é um experimental ainda no TS, para habilitar, precisar ir no tsconfig.json 
+    habilitar o  "experimentalDecorators": true .
+
+Class decorators
+
+    Exemplo de várias api e quer determinar qual a versão do api.
+    .assing - associar ao objeto
+    _ _ - quer dizer que é uma propriedade privada, é usado para caso classe que esteja chamando tenha alguma version
+    ele não se misturar com a propriedade dele.
+    Para funcionar precisa ser chamado npm run start não funciona, mas funciona se usar npm run start:dev, agora está 
+    injetando uma propriedade dinâmicamente, isso não existia na classe o número da versão.
+
+Attribute decorators
+
+    @minLength(3) - atribuido uma função de não aceitar palavra com menos de 3 letras, se não da erro.
+
+    Criação de um decorators que não existe por padrão no JS:
+
+    Guarda um valor em let _value.
+    Cria uma função quando a propriedade é lida que é o const getter.
+    Outra função const setter que é quando seta um valor nela.
+    Injetou no comportamento que foi atribuido dentro do Object.defineProperty que é o gette e o setter.
+
+    Importante para criarmos a nossa própria lógica e fazer validações.
+
+
+
+

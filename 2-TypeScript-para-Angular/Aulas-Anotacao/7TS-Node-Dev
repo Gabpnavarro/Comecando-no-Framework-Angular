@@ -1,0 +1,25 @@
+Trablhando com TS Node Dev
+
+    
+Instalar um servidor para transformar o uso do TS menos complexo
+
+    npm install ts-node-dev -D 
+
+    ts-node-dev é um servidor local que entende TS, então não precisa ficar toda hora
+    rodando seu comando para gerar uma build.
+    O -D significa que é uma instalação localmente.
+
+    Dentro da pasta package.json adicionar ao código 
+
+    "script": {
+        "start": "npx tsc && node build/index.js",
+        "start:dev": "ts-node-dev --respawn --transpile-only src/index.ts"
+    }
+
+    Ele vai rodar o ts-node-dev
+    --respawn : retorna o arquivo denovo
+    --transpile-only : transpila isso no momemnto que for executado.
+
+    Para ele executar usar o comando no terminal 
+
+    npm run start:dev
