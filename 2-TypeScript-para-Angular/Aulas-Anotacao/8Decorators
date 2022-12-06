@@ -4,7 +4,7 @@ O principio dos decorators
 
     @ExibirNome - o @ significa que vai decorar a função.
 
-    O decorators é um experimental ainda no TS, para habilitar, precisar ir no tsconfig.json 
+    O decorators é um experimental ainda no TS, para habilitar precisar ir no tsconfig.json 
     habilitar o  "experimentalDecorators": true .
 
 Class decorators
