@@ -1,0 +1,73 @@
+Diretivas
+
+
+
+    A diretiva é um comando especial do Angular par chamar efeitos / comportamentos de script
+    de maneira mais fácil.
+
+    Atributo e estruturais
+
+    ng new diretivas-proj
+    yes
+    css
+
+Criar um component card
+
+    ng g c card
+    yes
+
+    Apaga todo conteudo dentro do arquivo .html
+    Apaga o arquivo spec 
+
+DIRETIVAS ESTRUTURAIS
+
+ngIf
+    *ngIf="true"
+    *ngIf="false"
+
+    Pode mostrar ou n um component.
+
+    *ngIf="isAliveCard"
+
+        Se adicionar o isAliveCard dentro de uma classe e colocar como true ou false funciona da mesma maneira.
+
+        isAliveCard = true;
+
+ng-template
+
+        Ele só funciona condicionalmente, pode ser utilizado para se a condição for isAliveCard=false, ele 
+        mudar a impressão da tela, para carregamento, por exemplo.
+
+ngFor
+
+        Executa um laço de repetição para desenhar elementos baseado em uma lista.
+        Constroi um li dinamicamente no exemplo citado.
+        Com apenas uma linha de código.
+
+Reatividade
+
+        O ngFor é reativo ao que está vetado também.
+
+ngFor com Index
+
+        Você pode setar uma configuração que ao clicar na tela pode adicionar um produto ao carrinho, como pode remover
+
+Switch e Switch classe
+        
+        Tem diversas maneiras dinâmicas de poder setar um código.
+
+        *ngSwitchDefault - se não tiver nenhuma informação ou não for compativel com o código base.
+
+
+DIRETIVAS DE ATRIBUTO        
+
+
+        NG G C COMP-ATRIBUTOS
+
+        Estudar isso em um material separado.
+
+        NgClass
+        MgStyle
+        NgModel
+        NgTemplate
+        NgContent
