@@ -1,0 +1,93 @@
+Entendendo o Scoped
+
+    1° etapa
+
+        Mudar o selector por app-root
+
+    2° etapa    
+
+        Modifica dentro do arquivo app.component.html
+
+        Adiciona <h1>OLA MUNDÃO</h1>
+        
+    3° etapa
+    
+        Modifica dentro do arquivo app.component.css 
+
+        Adiciona 
+        p {
+            font-family: Lato;
+        }
+
+        h1 {
+            color: red;
+        }
+
+        A cor vermelha só altera no h1 dentro do app.component.ts 
+        e não altera o do hello.component.ts pois só altera arquivos do seu scopo a não ser que referencie.
+
+Os crontratos pra se criar um componente
+
+    Criando do zero
+
+    hello.component.html
+    hello.component.css
+
+    Copia e cola as estilização que já tinha no hello.component.ts
+
+    hello.component.ts - já existe
+
+    {
+        templateUrl : './hello.component.html'
+        // serve para direcionar o arquivo html './hello.component.html'
+        styleUrls: ['./hello.component.css']
+        // serve para direcionar o arquivo html './hello.component.css'
+
+    }
+
+Criando componenente Angular simples
+
+    Criar um componente do zero
+
+    Dentro da pasta app, criar a pasta components
+
+    Dentro da pasta components, criar o arquivo menu.component.ts
+        
+    Dentro do arquivo menu.component.ts precisamos declarar que ele é angular
+
+        Import { Component } from '@angular/core' ;           //Contrato, indicando que ele é um {component}
+
+        @Component({                                          //Decorator
+
+        })
+
+        export class MenuComponent{}
+
+        Isso é o mínimo que precisa para declarar.
+
+
+Continuando:
+
+    Import { Component } from '@angular/core' ;         
+
+    @Component({ 
+        selector: 'menu-component',
+        template: '<h2>Felipe</h2>',
+        style: ['h2{ color: blue}']                                        
+
+    })
+
+    export class MenuComponent{}
+
+    Ao colocar o selector <menu-component></menu-component> no arquivo app.component.html , ele deveria trazer 
+    o conteudo html já que está chamando pelo código acima. Mas deu erro porque não é conhecido, ele não faz parte
+    do module, no app.module.ts (todos os componentes são agrupados nesse arquivo), para poder funcionar ele precisa:
+
+        import { Menu Component } from './components/menu.component';
+        //{Class}
+
+        Além de adicionar esse código, deve ser declarado e para isso adiciona-se em:
+
+        declarations: [MenuComponent]
+    
+

@@ -1,0 +1,29 @@
+ Introdução
+
+    
+
+    app.module.ts - Modulo principal
+
+    Serve para armazenar componentes, diretivas, pipes e services.
+    Todo component deve ta no module
+
+    Para não fica cheio de informações os modulos é necessários criar sub modulos.
+    Guarda os sub modulos no app module.
+    O app module fica responsável por iniciar a aplicação e carregar todos os demais componentes/módulos.
+
+Anatomia de módulos Angular    
+
+    Imagem
+
+Trabalhando com Sub Módulos na Prática
+
+    ng g m lista
+
+    aquele m é referenciando o modulos
+
+    cria o arquivo list.module.ts
+
+    O decorater que trabalha com modulo Angular
+
+    @ngModule
+

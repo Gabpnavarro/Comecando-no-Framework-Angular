@@ -1,0 +1,79 @@
+
+    Abre um objeto dentro do component
+    Ele precisa ser importado no app.module.ts para funcionar.
+    Foi criado um botão
+
+    Dentro da classe tem uma propriedade buttonText, tem que colocar no button.component.ts 
+    <button>{{}}</button>
+
+    Se quiser acessar apenas com a função: buttonObject.label
+
+Estilo global vs scoped
+
+    O arquivo style se tiver configurado, ele setar um valor global, mas se quiser mudar a preferencia, apenas se
+    usar um arquivo.component.css 
+
+Fazendo seus componentes conversarem
+
+    Foi feito no componente pai app.component.ts uma variável chamada
+
+        buttonLabel: string = 'CARRINHO';
+
+    Ela está conversando com <my-button [label]='buttonLabel'></my-button> do componente button.component.ts
+
+    Porque no outro component pai app.component.html <my-button [label]='buttonLabel'></my-button> porque está definindo que vai ter uma propriedade chamada 
+        [ label ]  
+    que recebe o botão label 
+        ='buttonLabel'
+    que faz o tratamento dentro do componente
+    <my-button>
+    que está localizado no arquivo button.component.ts
+
+    Dentro dessa propriedade label que foi determinada, no arquivo button.component.ts, em:
+
+    export class Button {
+        @Input() label: string ='';
+    }
+
+    Detalhe: pra isso funcionar foi necessário adicionar ao import o Input.
+
+    Se quiser mudar o resultado que está pedindo basta mudar o que está dentro do ''
+
+    <my-button [label]='buttonSecond'></my-button>
+
+    Mas pra funcionar foi adicionado no app.component.ts
+
+    buttonSecond: string = 'ADICIONAR A FAVORITOS'
+
+    Ele também entende o código caso seja usado assim:
+
+    <my-button label="{{buttonSecond}}"></my-button>
+
+    Quando colocar {{}} ele entende que vai ser colocado uma variável, se colocar
+    "" ele entende que vai ser colocado um texto, em ambas ocasiões sem o [].
+
+    Esses dois acima funcionam da mesma maneira:
+
+    <my-button label="{{buttonSecond}}"></my-button>  //Chamado de interpolação
+    <my-button [label]="buttonSecond"></my-button>
+
+    {{}} compartilha os componentes uns com os outros.
+
+    Esses dois funcionam da mesma maneira:
+
+    <my-button label="buttonSecond"></my-button>
+    <my-button [label]="'buttonSecond'"></my-button>  //property binding
+
+    Os mais recomendados de usar:
+
+    <my-button label="{{buttonSecond}}"></my-button>
+    <my-button label="buttonSecond"></my-button>
+
+
+
+
+
+
+
+
+

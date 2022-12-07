@@ -1,0 +1,52 @@
+Data Binding
+
+    Serve para associar um elemento visual a uma propriedade ou método da classe TS
+
+Event Binding
+
+    Adiciona uma função getAlert() em button.component.ts e para associa-lo vai no button.component.html adiciona 
+    (click)="getaAlert()" , o () foi usado porque é um evento do HTML, se fosse propriedade seria usado [].
+    
+    isso faz imprimir na tela o alerta.
+
+    Se quisse passar um valor, faz isso :
+
+    (click)="getaAlert(14)"
+
+Two way data Binding
+
+    Conversa entre ts com html e html com ts
+
+    Explicação de como ambos conversarem na prática, criou um input que sempre que recebe uma informação imprime 
+    em seguida.
+
+        Associa propriedade da class placeholder: string= "email", no arquivo ts, ao html com o property binding,
+        [value]="placeholder" (propriedade pq está em []) e depois fez o processo inverso que foi o HTML disparar
+        um evento, disparando alguma coisa (input)="placeholder = $any($event.target).value" na parte lógica do nosso
+        componente que era o (input) , como eles estão ligados com a interpolação 
+        <p>{{ placeholder }}</p>
+
+    Outra maneira de fazer isso mais fácil
+    
+        [(ngModel)] = "placepass"
+
+        placepass - foi uma propriedade criada para exemplificar.
+
+Angular Forms
+
+    ngModel - vem do app.module.ts é necesspario ter ele como seguinte código adicionado
+    
+    import {} from ''
+
+Style Binding
+
+    Adiciona no arquivo html [style.color]="color"
+
+    Foi colocado uma propriedade css .color pra pegar uma cor e foi associada a ela outra propriedade
+    "color" que para criar ela foi preciso adicionar no arquivo .ts dentro da class adiciona 
+    
+        color:string ="red"
+
+
+
+

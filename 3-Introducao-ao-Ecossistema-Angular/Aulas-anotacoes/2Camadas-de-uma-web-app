@@ -1,0 +1,31 @@
+Camadas de uma web app
+
+    Para o framework funcionar por baixo dos panos ele precisa dessas 4 camadas:
+
+    Componentes
+    Gerenciamento de estado
+    Roteamento
+    Renderização
+
+Componentes
+
+    Componentes é um elemento visual, customizável e reutilizável.
+    Pode usar isso de maneira isolada.
+    Vantagem é poder isolar e diminuir a complexidade.
+
+    Visual - HTML, CSS e Javascript
+    Customizável - Pode ser mais dinâmico
+    Reutilizável - pode repetir trechos da web facilmente.
+
+Gerenciamento de estados
+
+    Pode ser utilizado para substituir o if.
+    Fazer com que os componentes estejam se comunicando de maneira sicronizada.
+
+Roteamento
+
+    Responsável por você está em uma mesma página e os componentes mudam dinamicamente.
+    Controlar os apontamentos, de quais componentes acessar em determinada URL.
+
+
+    

@@ -1,0 +1,38 @@
+As atualizações vem no twitter e youtube sobre o Angular CLI.
+
+    ng help -> Os mais usados:
+
+    ng add  
+    ng new 
+    ng run  
+    ng serve 
+    ng test
+    ng doc - caso queira saber alguma coisa, ele abre o proprio site explicando sobre o termo usado
+
+Criar um novo projeto:
+
+    ng new life-cycle (Nome do projeto com nome life-cycle)
+    Em seguida digita Yes
+    Em seguida digita CSS
+
+Insta toda estrutura de pastas necessárias
+
+    browserlistrc - configurações pros browsers , questão de compatibilidade
+
+    editorconfig - configuração para o seu editor entender quais são as práticas de identação (indent)
+
+    gitignore - limpa arquivos cache
+
+    angular.json - arquivo de configuração gerais
+
+    karma.config.js - responsável pelos testes
+
+    package-look.json - dependencias do projeto , arquivo do node
+    package.json - dependencias do projeto , arquivo do node
+
+    README.md - Como criar componente, 
+
+    tsconfig.json - referente a arquivos de Typescript
+    tsconfig.app.json - extensão do tsconfig.json 
+    tsconfig.spec.json - para os testes
+

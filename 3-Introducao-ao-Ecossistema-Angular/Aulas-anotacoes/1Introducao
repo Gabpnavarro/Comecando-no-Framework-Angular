@@ -1,0 +1,54 @@
+Angular
+
+    Framework - baseado em Js
+    Typescript como linguagem principal
+    SPAs são o seu foco
+    Componentes são a base da arquitetura
+    Estrutura organiza e bem definida
+    Sistema de Tooling muito rico: CLI, HTTP, Router...
+
+    Reaproveitamento do código do Js
+
+Definições do Angular
+
+    AngularJS vs Angular
+
+    AngularJS 
+
+    Trabalha com JavaScript. (Antigo)
+
+    Angular
+
+    Trabalha com TypeScript. (Novo) 
+
+Mortal Kmbat capítulo final Angular vs React edition
+
+    As pessoas estão indo bastando pro React e sobre vaga no Angular
+      
+      Setup de arquivo o Angular é mais organizado, bem definido, pode fazer projeto escalável com o React.
+      Angular tem o setup grande de arquivos diferente do React.
+      React você tem a linguagem mais parecida do HTML, CSS e JS, diferente do Angular.
+
+    Ferramentas
+
+        React precisa de biblioteca de terceiros, pode adicionar uma complexidade de acordo com sua necessidade.
+        Angular ele já vem pronto, praticamente tem tudo dentro dele.
+
+    Imposição 
+
+        Angular é necessário usar o TS.
+        React é opcional o TS.
+
+    Material
+
+        Comunidade react é muito ativa, bastante material disponível.
+        Angular é ativo também, mas não no mesmo nível do react.  
+
+    Mobile
+
+        React pode aproveitar bastante da sua linguagem no mobile
+        Angular não tem tanto espaço dentro do mobile.     
+
+As Estratégias Angular comparada a outras ferramentas
+
+    Imagem: introducao.jpg

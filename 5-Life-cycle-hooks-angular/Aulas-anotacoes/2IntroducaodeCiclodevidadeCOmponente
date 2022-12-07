@@ -1,0 +1,73 @@
+Ciclo Componente
+
+    cd life-cycle
+
+    entrei na pasta life-cycle
+
+Criando primeiro Componente
+
+    ng serve - extensão local para criar um servidor e ter o resultado do projeto no navegador.
+    Ctrl+C - Pausa o server.
+
+    ng generate component title
+
+    Cria os componentes com nome title em .html .css .spec.ts .ts 
+
+    pode criar também de forma mais resumida com 
+
+    ng g c title
+
+    o g é do generate e c do component
+
+    Fazendo isso inclui a declaração no app.module.ts e o código import { TitleComponent } from './title/title...';
+    Reduzindo todo o nosso trabalho.
+
+O arquivo feito já pode ser usado, por exemplo:
+
+    Vai no arquivo title.component.ts , copia e cola o seu selector e adiciona ao arquivo app.component.html com o 
+    código:
+
+    <app-title></app-title>
+
+    Referenciando ao componente title.
+    No arquivo title.component.html tinha um código 
+
+    <p>title works!</p>
+
+    E ele foi impresso no server dessa forma.
+
+Entenda OnInit
+
+    OnInit: é uma interface por isso que colocado implements e colocado no import.
+    Momento de vida inicial.
+
+8 hooks de ciclos de vida
+
+    1 OnInit - inicia
+    2 OnChange - alteração
+    3 Docheck - check
+    8-destruição
+
+Onchange
+
+    Sempre que alterar um valor vai passar pelo OnChange se ele for inputado vai ser iniciado antes do OnInit
+
+Oncheck  
+
+    ng g c check-sample
+
+    Foi criado uma pasta check-sample
+
+A ordem de funcionamento 
+
+    checked -> content -> view
+    
+    Verifica se aconteceu alguma mudança
+    Verifica o conteúdo
+    Verifica a view
+
+    Anotação do professor na aula no arquivo check-sample.component.ts
+
+OnDestroy
+
+    *ngIf="True" - vem por padrão no código, quando fica false ele destroi o conteúdo, ativando a função do OnDestroy.

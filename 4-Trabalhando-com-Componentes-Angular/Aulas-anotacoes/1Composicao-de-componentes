@@ -1,0 +1,53 @@
+Entendendo a composição de componentes
+
+     Injeção é um anti corpo ( analógia)
+
+     Injeta cada componente de maneira isolada no app fonte (APP-ROOT) e por fim injeta no index.html 
+
+     Para fazer isso no prática precisa fazer isso no StackBlitz (editor online) - sem precisar instalar nada.
+     Escolher opção Frontend -> Angular.
+
+     https://stackblitz.com/edit/angular-ivy-qbmldm?file=src%2Fapp%2Fapp.component.ts
+
+O que importa esta na FILES, está dividio entre esse arquivos e pastas
+
+    Pasta src - código fonte
+
+        index.html - Só aponta para um componente, o componente raiz
+        //Os componentes serão injetados no my-app e o my-app ta sendo injetado no index.html
+        //Arquivo final
+        //Esse my-app é o app.component.ts
+        main.ts - iniciar modulos do angular, inicializar o projeto
+        polyfills.ts - Aumentar a compatibilidade com navegadores antigos
+        styless.css - Estilização
+
+
+    app
+        app.component.css - estilização
+        //O app é proveniente do nome do nosso componente do ("app".component) depois o nome component pra entender que é um componente
+
+        app.component.html
+
+        app.component.ts : 
+
+        Selector é como eu utilizo ele;
+        A porta de entrada do app.component.css é o ts;
+        templateUrl - é a parte html : app.component.html;
+        Os estilos vem do arquivo app.component.css;
+
+
+        app.module.ts
+
+        hello.component.ts
+        Pra chamar ele tem q digitar hello, devido ao seu selector
+
+
+    
+    Fora da pasta src - arquivos de configuração
+
+        package.json - arquivo coração
+        angular.json - configurações gerais
+        tsconfig.json - configuração do ts
+
+
+
