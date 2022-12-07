@@ -1,6 +1,10 @@
 Diretivas
 
+        OS CÓDIGOS DAS AULAS ESTÃO EM 
 
+                diretivas-proj -> src -> app
+                diretivas-proj -> src -> app -> card
+                diretivas-proj -> src -> app -> comp-atributos
 
     A diretiva é um comando especial do Angular par chamar efeitos / comportamentos de script
     de maneira mais fácil.
