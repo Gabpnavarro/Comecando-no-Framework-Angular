@@ -1,3 +1,14 @@
+Necessário antes da aula criar um arquivo com o código
+
+ng new "titulo do código"
+
+cd "titulo do código"
+
+code .
+
+
+Auxilio da aula
+
 Criando pastas e arquivos
 
     ng g m pages/index
@@ -7,6 +18,77 @@ Criando pastas e arquivos
     ng g c pages/indes/title
 
     ng g c pages/indes/title
+    
+Primeiras aulas anotações no próprio arquivo do professor com //
+
+{path:'', componente: TitleComponent, pathMatch:'full'}
+
+tem a opção 'full' e 'prefix'
+
+Normalmente o full é para a tela principal e prefix é relacionado ao direcimento da tela que ta especificada em path ''
+dentro das ''.
+
+prefix é usado para telas secundárias.
+
+Se estiver o código:
+
+{path: '**', redirectTo:''}
+
+rediceiona para uma página escolhida por vc, como o '' está vazio ele vai para a tela principal.
+
+
+
+Código routerLink
+
+
+<a [routerLink]> "['/']">HOME</a>
+<a [routerLink]> "['/portifolio']">PORTFOLIO</a>
+
+Após o a usávamos o href, para fazer referência a uma URL externa, seja link ou arquivo, com o 
+[routerLink] tem a msm função e o ['/portifolio'] indica qual página se refere o routerlink
+
+<a [routerLink] = "['/']" [routerLinkActive]="['classe']"  >HOME</a>
+
+adiciona uma classe chamada Activated e assim mudar o estilo no css, o Activated tem um estilo próprio
+
+[routerLinkActive]="['activated']"
+[routerLinkActiveOptions]="{exact: true}"
+
+Quando a rota for exatamente o que está setado, ele irá pintar a cor do PORTFOLIO ou HOME.
+No caso do código realizado vermelhor e azul as cores.
+
+
+adiciona no cardcomponent
+
+o numero do id pra achar a pagina
+
+this.parametrizador.params.subscribe(...)
+
+o objeto pra achar a pagina
+
+this.parametrizador.queryParams.subscribe(...)
+
+ngOnInit()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
