@@ -1,0 +1,61 @@
+		Services na Prática
+
+Entendendo o papel do service
+
+ARQUIVO .component.html
+
+ARQUIVO .component.css
+
+ARQUIVO .component.ts
+
+
+		PASTA environment
+
+	ARQUIVO environment.prod.ts	
+
+export const environment = {
+	production: false,
+	pokeApi: 'https://...'
+};
+
+Nesse arquivo posso colocar o nome do arquivo com ajuda
+da API.
+
+Arquivo provedor: service. Vai conversa com o API e os
+components.
+
+Criando um arquivo service 
+ng gerenate service NOMEDOARQUIVO
+
+ng g s services/pokemon
+
+Arquivos criados:
+
+pokemon.service.spec.ts (deleta isso - não precisa)
+pokemon.service.ts
+
+
+A anotomia de um service:
+
+No import temos o Injectable:
+
+significa que é um conteudo injetável, tudo que o 
+service faz eu posso usar dentro de um component
+
+
+Dentro do decorater, ele indica para onde vai a 
+injeção
+
+	providedIn: 'root'
+
+significa que vai para todo mundo.
+
+
+		ARQUIVO app.module.ts
+
+	provider: [],
+
+Conteúdos injetáveis. 
+
+Ele é um arquivo isolado.
+
