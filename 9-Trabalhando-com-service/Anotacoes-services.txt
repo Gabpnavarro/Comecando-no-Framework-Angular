@@ -1,0 +1,64 @@
+Service 
+
+ng new c10
+
+Pode servir mais de um componente, serve para
+guardar arquivos mais pesados, como API.
+
+Um service pode servir N componentes.
+
+O mais usados é deixar o componente para regras
+visuais e o service para regras de negócios.
+
+Service pode ficar na mesma pasta do component:
+app.service.ts .
+
+Criar um service para ter funções especifícas,
+dentro dos códigos.
+
+
+Preparando estruturas de pastas
+
+ng serve
+
+criar duas pastas
+
+components e services
+
+ng g c components/card
+
+
+Começa a fazer a formatação do html e css do 
+charmander.
+
+		Deixando os cards dinamicos:
+
+Deixar o nome dinamico
+
+		ARQUIVO card.component.ts
+
+export class ... {
+
+name:string = "CHARIZARD"
+attributesTypes: string[] = ['FIRE' , 'ROCK']
+
+}
+
+		ARQUIVO card.component.html
+
+<div class= "card__title">
+<h3> {{ name }} </h3>
+<div>
+
+<div class= "card__stats">
+<span 
+	class= "card__stats__type"
+	*ngFor="let type of attributesTypes"
+> 
+{{ type }} 
+</span>
+<div>
+
+
+
+
