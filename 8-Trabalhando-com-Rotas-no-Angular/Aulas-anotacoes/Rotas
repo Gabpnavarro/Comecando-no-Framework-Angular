@@ -68,7 +68,19 @@ o objeto pra achar a pagina
 
 this.parametrizador.queryParams.subscribe(...)
 
-ngOnInit()
+
+
+ngOnInit(): void {
+    setInterval(()->{
+    this.navegador(['/'])
+    }, 5000)
+}
+
+Com esse código ele te obriga a ir para a página principal depois de 5 segundos.
+
+
+
+
 
 
 
